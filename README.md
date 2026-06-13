@@ -210,17 +210,28 @@ php artisan config:clear
 ### Blank page or missing styles
 
 - Ensure `npm run dev` is running (development), or run `npm run build` (production)
-- Hard-refresh the browser (`Ctrl+Shift+R` / `Cmd+Shift+R`)
-
-### `Vite manifest not found`
-
-Run the frontend build:
+- If you stopped `npm run dev` but the page is still blank, delete the stale hot file so Laravel uses compiled assets:
 
 ```bash
-npm run dev
-# or
+rm public/hot
 npm run build
 ```
+
+- On Windows, use `del public\\hot` instead of `rm`
+- Hard-refresh the browser (`Ctrl+Shift+R` / `Cmd+Shift+R`)
+
+### `Vite manifest not found` or blank white page
+
+This happens when Laravel cannot load frontend assets. Common causes:
+
+1. **`npm run dev` is not running** and **`public/build/` does not exist** — run `npm run build`
+2. **Stale `public/hot` file** — left over after stopping Vite; Laravel still tries the dev server. Delete it:
+
+```bash
+rm public/hot
+```
+
+3. **IPv6 dev server URL on Windows** — if scripts point to `[::1]:5173`, use `127.0.0.1` in `vite.config.js` (already configured) and restart `npm run dev`
 
 ### Permission errors on `storage/` or `bootstrap/cache/`
 
@@ -247,3 +258,4 @@ php artisan serve --port=8001
 ## License
 
 This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
