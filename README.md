@@ -1,150 +1,66 @@
-# PHP Developer Technical Assessment  
-## Rick and Morty Encyclopedia
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-## Overview
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-This exercise is intended to evaluate your ability to design and build a **small production-quality web application using modern PHP practices**.
+## About Laravel
 
-You will create a web-based encyclopedia using data from the Rick and Morty API.
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-The emphasis of this assessment is on:
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-- **Clean architecture and maintainable code**
-- **Proper MVC separation**
-- **Object-oriented PHP**
-- API integration
-- Security and resilience
-- Performance and usability
-- Thoughtful engineering decisions
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-Visual design is considered a bonus, but **functionality, code quality, and implementation approach are the primary evaluation criteria**.
+## Learning Laravel
 
----
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-# Technical Requirements
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-Your solution **must** use:
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-- **PHP 8.3 or higher**
-- Composer
-- Git
+## Laravel Sponsors
 
-You may use any PHP framework, front-end framework, CSS library, or Composer packages you feel are appropriate.
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-However:
+### Premium Partners
 
-- **All communication with the Rick and Morty API must be implemented using your own application code**
-- You may use generic HTTP clients/libraries (such as Guzzle, Symfony HTTP Client, cURL wrappers, etc.)
-- **You must not use SDKs, wrappers, or dedicated libraries built specifically for the Rick and Morty API**
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[WebReinvent](https://webreinvent.com/)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Jump24](https://jump24.co.uk)**
+- **[Redberry](https://redberry.international/laravel/)**
+- **[Active Logic](https://activelogic.com)**
+- **[byte5](https://byte5.de)**
+- **[OP.GG](https://op.gg)**
 
----
+## Contributing
 
-# Application Requirements
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-Your application **must follow a clear MVC structure** and use **object-oriented PHP throughout**.
+## Code of Conduct
 
-The application should allow users to:
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Character Listing
+## Security Vulnerabilities
 
-Display a browsable list of Rick and Morty characters with:
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-- **Pagination**
-- **Search functionality**
-- **Filtering functionality**
+## License
 
-The browsing experience should remain responsive and user-friendly when navigating larger datasets.
-
----
-
-## Character Details
-
-Display detailed information for an individual character, including at minimum:
-
-- At least one image
-- Name
-- Species
-- Origin
-- Episodes in which the character appears
-
----
-
-# API
-
-Use the public Rick and Morty REST API:
-
-Rick and Morty API: https://rickandmortyapi.com
-
-Authentication is not required.
-
-Please note that the API is rate-limited, and your implementation should account for this appropriately where reasonable.
-
----
-
-# Production Readiness
-
-Your submission should be considered **production-ready**.
-
-Please consider:
-
-- Input validation and sanitization
-- Error handling
-- Secure coding practices
-- Protection against common attack vectors
-- Sensible application structure
-- Performance considerations
-- Maintainability and readability
-- Dependency management
-- Environment configuration
-
-You are encouraged to document **architectural decisions, trade-offs, and notable implementation choices** made during development.
-
----
-
-# Candidate Authorship & Use of AI Tools
-
-This assessment is intended to evaluate **your own engineering ability and decision-making**.
-
-You may use developer assistance tools (including AI tools, documentation resources, code completion, and reference materials) as part of your workflow. However:
-
-- **The architecture, implementation, and final submission must be your own work**
-- **You must fully understand, review, and be able to explain all submitted code**
-- **Blindly generated, copy-pasted, or unreviewed AI output is not acceptable**
-- We may discuss implementation decisions, architecture, and specific areas of your code during follow-up conversations
-
-The goal is not to prohibit modern tooling, but to assess your **practical software engineering skills, judgment, and ownership of the submitted solution**.
-
----
-
-# Time Expectation
-
-This assessment is intentionally scoped to be completed within approximately **2–3 hours**.
-
-We are not expecting a fully featured enterprise platform. We are more interested in seeing your:
-
-- Engineering approach
-- Prioritization
-- Implementation quality
-- Understanding of the codebase
-
-…than an overly polished feature set.
-
----
-
-# Submission
-
-To submit your solution:
-
-1. Fork this repository
-2. **Commit your work regularly as you progress**
-3. Submit a link to your completed fork
-
-Your application should be runnable locally from the repository without requiring additional setup beyond standard project installation steps.
-
-Please include **clear setup instructions** in your README.
-
----
-
-# Copyright
-
-All trademarks remain the property of their respective owners.
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
