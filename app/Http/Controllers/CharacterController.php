@@ -56,7 +56,7 @@ class CharacterController extends Controller
         } catch (RickAndMortyApiException $e) {
             return Inertia::render('Characters/Details', [
                 'character' => null,
-                'error' => $e->getCode() === 404
+                'error' => $e->getStatusCode() === 404
                     ? 'Character not found.'
                     : 'Sorry, something went wrong, try again.',
             ]);
